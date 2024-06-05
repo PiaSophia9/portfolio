@@ -1,0 +1,33 @@
+<section>
+  <div class="background_container">
+    <img class="blue_blurr" src="./assets/img/skills/blurr.svg" alt="" />
+  </div>
+  <div class="main_content_container">
+    <div class="left_side">
+      <div class="img_text_container">
+        <img src="./assets/img/skills/Angular.svg" alt="" />
+        <span>Angular</span>
+      </div>
+      @for (skill of skills; track $index) {
+      <div class="img_text_container">
+        <img src="{{ skill.src }}" alt="" />
+        <span>{{ skill.name }}</span>
+      </div>
+      }
+    </div>
+    <div class="right_side">
+      <div class="headline_container">
+        <h1>My skills</h1>
+        <img src="./assets/img/skills/line.svg" alt="" />
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
+        fugiat laboriosam vel qui doloribus, necessitatibus mollitia eveniet,
+        veniam at quaerat voluptatibus sequi cumque iste suscipit dolores porro.
+        Quibusdam, culpa expedita?
+      </p>
+      <button>Get in touch</button>
+    </div>
+  </div>
+</section>

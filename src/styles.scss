@@ -1,6 +1,6 @@
 html,
 body {
-  max-width: 100%;
+  // max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -9,6 +9,11 @@ body {
   color: white;
   background-color: #141d2f;
   font-family: "Poppins";
+  // max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 button {
@@ -28,12 +33,26 @@ button {
   }
 }
 
+input,
+textarea {
+  font-family: "Poppins";
+  padding: 15px 25px 15px 25px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 80px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #00bee8;
+  background: #141d2f;
 }
 
 ::-webkit-scrollbar-thumb {

@@ -1,0 +1,56 @@
+.project_container {
+  display: flex;
+  align-items: center;
+  padding-right: 160px;
+  gap: 80px;
+  .left_side {
+    width: 50%;
+  }
+  .right_side {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 16px;
+    h2 {
+      color: #4b47ff;
+      font-size: 3em;
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+    h3 {
+      color: #00bee8;
+      font-weight: 400;
+      font-size: 1.5em;
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+  }
+}
+
+.button_container {
+  display: flex;
+  gap: 32px;
+  button {
+    transition: none;
+    &:hover {
+      transform: none;
+    }
+  }
+  button:first-child {
+    background-color: #4b47ff;
+    &:hover {
+      background-color: #00bee8;
+    }
+  }
+  button:nth-child(2) {
+    background-color: transparent;
+    border: 2px solid #00bee8;
+    &:hover {
+      background-color: #00bee8;
+    }
+  }
+}
+
+.reversed {
+  flex-direction: row-reverse;
+}

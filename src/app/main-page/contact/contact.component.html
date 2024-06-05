@@ -1,0 +1,43 @@
+<section>
+  <div class="background_container">
+    <!-- <img class="blue_blurr" src="./assets/img/skills/blurr.svg" alt="" /> -->
+  </div>
+  <div class="main_content_container">
+    <div class="left_side">
+      <div class="headline_container">
+        <img src="./assets/img/contact/line.svg" alt="" />
+        <h1>Contact</h1>
+      </div>
+      <div class="content_container">
+        <h2>Got a problem to solve?</h2>
+        <p>
+          Contact me through this form, I am interested in hearing from you,
+          knowing your ideas and contributing to your projects with my work.
+        </p>
+        <p>Need a Frontend developer? Contact me!</p>
+      </div>
+    </div>
+    <div class="right_side">
+      <input [(ngModel)]="inputName" type="text" placeholder="Your name" />
+      <input [(ngModel)]="inputEmail" type="text" placeholder="Your email" />
+      <textarea
+        [(ngModel)]="inputMessage"
+        name=""
+        id=""
+        rows="10"
+        placeholder="Your message"
+      ></textarea>
+      <div class="terms_container">
+        <img src="./assets/img/contact/checkbox_empty.svg" alt="" />
+        <span>
+          I've read the
+          <a [routerLink]="['imprint']" routerLinkActive="active"
+            >privacy policy
+          </a>
+          and agree to processing of my data as outlined.
+        </span>
+      </div>
+      <button>Send message</button>
+    </div>
+  </div>
+</section>
