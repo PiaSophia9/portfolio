@@ -1,0 +1,31 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header_container {
+  width: 100%;
+  height: 80px;
+  background-color: #141d2f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    margin-left: 80px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.link_container {
+  display: flex;
+  gap: 16px;
+  margin-right: 80px;
+  a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

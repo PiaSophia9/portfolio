@@ -1,0 +1,37 @@
+<section>
+  <div class="background_container">
+    <img
+      class="blue_blurr"
+      src="./assets/img/background_shapes/blue_blurr_landing-page.svg"
+      alt=""
+    />
+    <img
+      src="./assets/img/background_shapes/green_blurr_landing-page.svg"
+      alt=""
+    />
+  </div>
+  <div class="landing-page_container">
+    <div class="headline_container">
+      <div class="vertical_headline">I am</div>
+      <div class="horizontal_headline_container">
+        <span class="name">Sophia Brouwers</span><br />
+        <span class="job_title">FRONTEND DEVELOPER</span>
+      </div>
+    </div>
+    <button>Lets talk!</button>
+  </div>
+  <div class="bottom_container">
+    <div class="social_icons_container">
+      <img src="./assets/img/blue_line.svg" alt="" />
+      @for (socialIconSrc of SocialIconsSrc; track $index) {<img
+        class="social_icon"
+        src="{{ socialIconSrc }}"
+        alt=""
+      />}
+    </div>
+    <div class="scroll_down">
+      <span>Scroll down</span>
+      <img src="./assets/img/icons/scroll_down.svg" alt="" />
+    </div>
+  </div>
+</section>
