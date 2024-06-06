@@ -1,1 +1,18 @@
-<p>footer works!</p>
+<section>
+  <div class="left">
+    <div class="logo_container">
+      <span class="logo">Soph</span>
+      <span class="logo_colored">i</span>
+      <span class="logo">a</span>
+    </div>
+    <a [routerLink]="['imprint']" routerLinkActive="active">Impressum </a>
+  </div>
+  <span class="center">&#169; Sophia Brouwers 2024</span>
+  <div class="right">
+    @for (socialIconSrc of SocialIconsSrc; track $index) {<img
+      class="social_icon"
+      src="{{ socialIconSrc }}"
+      alt=""
+    />}
+  </div>
+</section>

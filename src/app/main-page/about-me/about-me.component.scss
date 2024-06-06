@@ -31,6 +31,12 @@ section {
     .icon_text_container {
       display: flex;
       gap: 24px;
+      img {
+        transition: 125ms ease-in;
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
     }
   }
   .right_side {

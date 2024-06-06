@@ -7,6 +7,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-main-page',
@@ -24,4 +25,8 @@ import { ContactComponent } from './contact/contact.component';
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss',
 })
-export class MainPageComponent {}
+export class MainPageComponent {
+  constructor() {
+    AOS.init();
+  }
+}

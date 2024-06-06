@@ -44,10 +44,11 @@ section {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin-right: 160px;
+  margin-right: 80px;
   gap: 16px;
   button {
     margin-block-start: 1em;
+    transform-origin: left;
   }
   input {
     width: 100%;
@@ -70,6 +71,34 @@ section {
     a {
       text-decoration: none;
       color: #4b47ff;
+      transition: 125ms ease-in;
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
+  .go_up_container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 80px;
+    position: relative;
+    img {
+      cursor: pointer;
+      animation: MoveUpDown 2s linear infinite;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
   }
 }

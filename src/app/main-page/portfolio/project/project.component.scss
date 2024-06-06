@@ -5,12 +5,16 @@
   gap: 80px;
   .left_side {
     width: 50%;
+    img {
+      width: 100%;
+    }
   }
   .right_side {
     display: flex;
     flex-direction: column;
     width: 50%;
     gap: 16px;
+    margin-bottom: 48px;
     h2 {
       color: #4b47ff;
       font-size: 3em;

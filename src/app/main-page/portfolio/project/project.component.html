@@ -1,14 +1,13 @@
-<!-- @for (item of items; track $index) { -->
-<div class="project_container">
+@for (project of projects; track $index) {
+<div [ngClass]="{ project_container: true, reversed: project.isReversed }">
   <div class="left_side">
-    <img src="./assets/img/portfolio/laptop.svg" alt="" />
+    <img src="{{ project.imageSrc }}" alt="" />
   </div>
   <div class="right_side">
-    <h2>Join</h2>
-    <h3>Angular | TypeScript | HTML | CSS | Firebase</h3>
+    <h2>{{ project.title }}</h2>
+    <h3>{{ project.technologies }}</h3>
     <p>
-      Task manager inspired by the Kanban System. Create and organize tasks
-      using drag and drop functions, assign users and categories.
+      {{ project.description }}
     </p>
     <div class="button_container">
       <button>Live test</button>
@@ -16,4 +15,4 @@
     </div>
   </div>
 </div>
-<!-- } -->
+}

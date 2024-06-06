@@ -8,25 +8,36 @@ nav {
 
 .header_container {
   width: 100%;
-  height: 80px;
+  height: 96px;
   background-color: #141d2f;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  p {
+  .logo_container {
+    display: flex;
     margin-left: 80px;
-    font-size: 24px;
-    font-weight: 600;
+    span {
+      font-size: 40px;
+      font-weight: 600;
+    }
+    .logo_colored {
+      color: #00bee8;
+    }
   }
 }
 
 .link_container {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   margin-right: 80px;
   a {
+    font-size: 24px;
     color: white;
     text-decoration: none;
     cursor: pointer;
+    transition: 125ms ease-in;
+    &:hover {
+      color: #00bee8;
+    }
   }
 }
