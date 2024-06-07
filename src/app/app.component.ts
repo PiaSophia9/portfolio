@@ -8,6 +8,8 @@ import { MySkillsComponent } from './main-page/my-skills/my-skills.component';
 import { PortfolioComponent } from './main-page/portfolio/portfolio.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-root',
@@ -28,4 +30,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 })
 export class AppComponent {
   title = 'portfolio';
+  constructor() {
+    AOS.init();
+  }
 }
