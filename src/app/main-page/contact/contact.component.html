@@ -3,7 +3,17 @@
     <!-- <img class="blue_blurr" src="./assets/img/skills/blurr.svg" alt="" /> -->
   </div>
   <div class="main_content_container">
-    <div class="left_side">
+    <div
+      class="left_side"
+      data-aos="fade-right"
+      data-aos-offset="0"
+      data-aos-delay="50"
+      data-aos-duration="125"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+    >
       <div class="headline_container">
         <img src="./assets/img/contact/line.svg" alt="" />
         <h1>Contact</h1>
@@ -17,15 +27,41 @@
         <p>Need a Frontend developer? Contact me!</p>
       </div>
     </div>
-    <div class="right_side">
-      <input [(ngModel)]="inputName" type="text" placeholder="Your name" />
-      <input [(ngModel)]="inputEmail" type="text" placeholder="Your email" />
+    <form
+      (ngSubmit)="onSubmit(contactForm)"
+      #contactForm="ngForm"
+      class="right_side"
+      data-aos="fade-left"
+      data-aos-delay="50"
+      data-aos-duration="125"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+    >
+      <input
+        [(ngModel)]="inputData.inputName"
+        type="text"
+        placeholder="Your name"
+        name="name"
+        required
+      />
+      <input
+        [(ngModel)]="inputData.inputEmail"
+        type="email"
+        placeholder="Your email"
+        name="email"
+        required
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+      />
       <textarea
-        [(ngModel)]="inputMessage"
-        name=""
+        [(ngModel)]="inputData.inputMessage"
+        name="message"
         id=""
         rows="10"
         placeholder="Your message"
+        type="text"
+        required
       ></textarea>
       <div class="terms_container">
         <img src="./assets/img/contact/checkbox_empty.svg" alt="" />
@@ -37,10 +73,10 @@
           and agree to processing of my data as outlined.
         </span>
       </div>
-      <button>Send</button>
+      <button type="submit">Send</button>
       <div class="go_up_container">
         <img src="./assets/img/contact/go_up.svg" alt="" />
       </div>
-    </div>
+    </form>
   </div>
 </section>

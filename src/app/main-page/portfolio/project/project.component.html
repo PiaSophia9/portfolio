@@ -1,15 +1,18 @@
 @for (project of projects; track $index) {
-<div [ngClass]="{ project_container: true, reversed: project.isReversed }">
-  <div
-    class="left_side"
-    [attr.data-aos]="project.isReversed ? 'fade-left' : 'fade-right'"
-  >
+<div
+  [ngClass]="{ project_container: true, reversed: project.isReversed }"
+  data-aos="fade-up"
+  data-aos-delay="0"
+  data-aos-duration="125"
+  data-aos-easing="ease-in-out"
+  data-aos-mirror="true"
+  data-aos-once="false"
+  data-aos-anchor-placement="top-center"
+>
+  <div class="left_side">
     <img src="{{ project.imageSrc }}" alt="" />
   </div>
-  <div
-    class="right_side"
-    [attr.data-aos]="project.isReversed ? 'fade-right' : 'fade-left'"
-  >
+  <div class="right_side">
     <h2>{{ project.title }}</h2>
     <h3>{{ project.technologies }}</h3>
     <p>
@@ -22,3 +25,5 @@
   </div>
 </div>
 }
+
+<!-- [attr.data-aos]="project.isReversed ? 'fade-left' : 'fade-right'" -->

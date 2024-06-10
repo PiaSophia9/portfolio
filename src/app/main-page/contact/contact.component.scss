@@ -50,7 +50,8 @@ section {
     margin-block-start: 1em;
     transform-origin: left;
   }
-  input {
+  input[type="text"],
+  input[type="email"] {
     width: 100%;
     background-color: transparent;
     border: 1px solid #4b47ff;

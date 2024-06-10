@@ -13,6 +13,12 @@ section {
   height: 100vh;
   display: flex;
   justify-content: space-between;
+  .left_blurr {
+    margin-left: -20%;
+  }
+  .right_blurr {
+    margin-right: -30%;
+  }
 }
 
 .landing-page_container {

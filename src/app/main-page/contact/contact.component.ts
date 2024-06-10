@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +12,15 @@ import { RouterModule } from '@angular/router';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-  inputName: string = '';
-  inputEmail: string = '';
-  inputMessage: string = '';
+  inputData = {
+    inputName: '',
+    inputEmail: '',
+    inputMessage: '',
+  };
+
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.valid && ngForm.submitted) {
+      console.log(this.inputData);
+    }
+  }
 }

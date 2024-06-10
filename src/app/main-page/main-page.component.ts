@@ -26,7 +26,7 @@ import AOS from 'aos';
   styleUrl: './main-page.component.scss',
 })
 export class MainPageComponent {
-  constructor() {
-    AOS.init();
-  }
+  // constructor() {
+  //   AOS.init();
+  // }
 }
