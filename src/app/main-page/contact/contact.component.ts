@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
@@ -8,7 +9,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, RouterModule],
+  imports: [FormsModule, RouterModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
@@ -24,8 +25,6 @@ export class ContactComponent {
     message: '',
   };
 
-  mailTest = true;
-
   post = {
     endPoint: 'https://sophia-brouwers.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -38,20 +37,19 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http
         .post(this.post.endPoint, this.post.body(this.inputData))
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            this.privacyPolicyChecked = false;
           },
           error: (error) => {
             console.error(error);
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      ngForm.resetForm();
     }
   }
 
@@ -62,19 +60,4 @@ export class ContactComponent {
       this.privacyPolicyChecked = true;
     }
   }
-
-  // onSubmit(ngForm: NgForm) {
-  //   if (ngForm.valid && ngForm.submitted) {
-  //     console.log(this.inputData);
-  //   }
-  // }
 }
-
-// if (!message.valid && message.touched) {
-//   <span>Please enter a message</span>
-//   }
-
-// @if (!message.valid && ) {
-//   <!-- @if (!message.valid && message.touched && !message.disabled) { -->
-//   <span>Please enter a message</span>
-//   }

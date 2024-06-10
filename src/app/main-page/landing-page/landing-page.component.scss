@@ -17,7 +17,7 @@ section {
     margin-left: -20%;
   }
   .right_blurr {
-    margin-right: -30%;
+    margin-right: -20%;
   }
 }
 
@@ -73,6 +73,8 @@ section {
     position: absolute;
     right: 0;
     bottom: 0;
+    text-decoration: none;
+    color: white;
     &:hover {
       cursor: pointer;
       // color: #00bee8;

@@ -42,6 +42,7 @@
       <input
         #name="ngModel"
         [(ngModel)]="inputData.name"
+        [ngClass]="{ outline_red: !name.valid && name.touched }"
         type="text"
         placeholder="Your name"
         name="name"
@@ -56,6 +57,7 @@
       <input
         #email="ngModel"
         [(ngModel)]="inputData.email"
+        [ngClass]="{ outline_red: !email.valid && email.touched }"
         type="email"
         placeholder="Your email"
         name="email"
@@ -70,6 +72,7 @@
       <textarea
         #message="ngModel"
         [(ngModel)]="inputData.message"
+        [ngClass]="{ outline_red: !message.valid && message.touched }"
         name="message"
         id="message"
         rows="10"
@@ -117,7 +120,9 @@
         </div>
       </div>
       <div class="go_up_container">
-        <img src="./assets/img/contact/go_up.svg" alt="" />
+        <a href="#landingPage"
+          ><img src="./assets/img/contact/go_up.svg" alt=""
+        /></a>
       </div>
     </form>
   </div>

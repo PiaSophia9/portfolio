@@ -7,7 +7,7 @@
     />
     <img
       class="right_blurr"
-      src="./assets/img/landing_page/right_blurr_3.svg"
+      src="./assets/img/landing_page/right_blurr_4.svg"
       alt=""
     />
   </div>
@@ -24,15 +24,15 @@
   <div class="bottom_container">
     <div class="social_icons_container">
       <img src="./assets/img/blue_line.svg" alt="" />
-      @for (socialIconSrc of SocialIconsSrc; track $index) {<img
-        class="social_icon"
-        src="{{ socialIconSrc }}"
-        alt=""
-      />}
+      @for (socialIcon of SocialIcons; track $index) {<a
+        href="{{ socialIcon.link }}"
+        target="_blank"
+        ><img class="social_icon" src="{{ socialIcon.imageSrc }}" alt="" /></a
+      >}
     </div>
-    <div class="scroll_down">
+    <a class="scroll_down" href="#aboutMe">
       <span>Scroll down</span>
       <img src="./assets/img/icons/scroll_down.svg" alt="" />
-    </div>
+    </a>
   </div>
 </section>

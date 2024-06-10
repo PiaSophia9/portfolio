@@ -10,9 +10,18 @@ import { RouterModule } from '@angular/router';
   styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
-  SocialIconsSrc: string[] = [
-    './assets/img/social_icons/github_big.svg',
-    './assets/img/social_icons/email_big.svg',
-    './assets/img/social_icons/linkedIn_big.svg',
+  SocialIcons: { imageSrc: string; link: string }[] = [
+    {
+      imageSrc: './assets/img/social_icons/github_big.svg',
+      link: 'https://github.com/PiaSophia9',
+    },
+    {
+      imageSrc: './assets/img/social_icons/email_big.svg',
+      link: 'mailto:mail@sophia-brouwers.de',
+    },
+    {
+      imageSrc: './assets/img/social_icons/linkedIn_big.svg',
+      link: 'https://www.linkedin.com/in/sophia-brouwers/',
+    },
   ];
 }

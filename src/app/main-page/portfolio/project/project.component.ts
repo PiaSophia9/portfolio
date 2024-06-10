@@ -21,7 +21,7 @@ export class ProjectComponent {
     {
       imageSrc: './assets/img/portfolio/laptop.png',
       title: 'Join',
-      technologies: ['JavaScript', 'HTML', 'CSS'],
+      technologies: ['JavaScript | HTML | CSS'],
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       linkLiveTest: '',
@@ -31,9 +31,9 @@ export class ProjectComponent {
     {
       imageSrc: './assets/img/portfolio/laptop.svg',
       title: 'El Pollo Loco',
-      technologies: ['JavaScript', 'HTML', 'CSS'],
+      technologies: ['JavaScript | HTML | CSS'],
       description:
-        'A Slack clone app that facilitates smooth team communication and collaboration through messaging, file sharing, and customizable channels to enhance workplace efficiency.',
+        'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the giant Chicken.',
       linkLiveTest: '',
       linkGithub: 'https://github.com/PiaSophia9/pollo_loco',
       isReversed: true,
@@ -41,11 +41,11 @@ export class ProjectComponent {
     {
       imageSrc: './assets/img/portfolio/laptop.svg',
       title: 'Pokedex',
-      technologies: ['JavaScript', 'HTML', 'CSS'],
+      technologies: ['JavaScript | HTML | CSS'],
       description:
         'A Slack clone app that facilitates smooth team communication and collaboration through messaging, file sharing, and customizable channels to enhance workplace efficiency.',
       linkLiveTest: '',
-      linkGithub: '',
+      linkGithub: 'https://github.com/PiaSophia9/pokedex',
       isReversed: false,
     },
   ];

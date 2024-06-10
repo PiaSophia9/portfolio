@@ -8,9 +8,20 @@ import { Component } from '@angular/core';
   styleUrl: './landing-page.component.scss',
 })
 export class LandingPageComponent {
-  SocialIconsSrc: string[] = [
-    './assets/img/social_icons/github_big.svg',
-    './assets/img/social_icons/email_big.svg',
-    './assets/img/social_icons/linkedIn_big.svg',
+  SocialIcons: { imageSrc: string; link: string }[] = [
+    {
+      imageSrc: './assets/img/social_icons/github_big.svg',
+      link: 'https://github.com/PiaSophia9',
+    },
+    {
+      imageSrc: './assets/img/social_icons/email_big.svg',
+      link: 'mailto:mail@sophia-brouwers.de',
+    },
+    {
+      imageSrc: './assets/img/social_icons/linkedIn_big.svg',
+      link: 'https://www.linkedin.com/in/sophia-brouwers/',
+    },
   ];
 }
+
+// href="mailto:mail@sophia-brouwers.de"
