@@ -39,6 +39,11 @@ textarea {
   padding: 15px 25px 15px 25px;
   font-size: 16px;
   box-sizing: border-box;
+  color: white;
+  &:focus {
+    outline: #00bee8 solid 1px;
+    background-color: #141d2f;
+  }
 }
 
 h1 {

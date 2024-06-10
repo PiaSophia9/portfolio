@@ -40,45 +40,82 @@
       data-aos-anchor-placement="top-center"
     >
       <input
+        #name="ngModel"
         [(ngModel)]="inputData.name"
         type="text"
         placeholder="Your name"
         name="name"
+        minlength="2"
+        autocomplete="off"
         required
       />
+      @if (!name.valid && name.touched) {
+      <!-- @if (!message.valid && message.touched && !message.disabled) { -->
+      <span>Please enter your name</span>
+      }
       <input
+        #email="ngModel"
         [(ngModel)]="inputData.email"
         type="email"
         placeholder="Your email"
         name="email"
-        required
         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+        autocomplete="off"
+        required
       />
+      @if (!email.valid && email.touched) {
+      <!-- @if (!message.valid && message.touched && !message.disabled) { -->
+      <span>Please enter a valid email-address</span>
+      }
       <textarea
         #message="ngModel"
-        minlength="4"
         [(ngModel)]="inputData.message"
         name="message"
         id="message"
         rows="10"
         placeholder="Your message"
+        minlength="4"
+        autocomplete="off"
         required
       ></textarea>
       @if (!message.valid && message.touched) {
       <!-- @if (!message.valid && message.touched && !message.disabled) { -->
       <span>Please enter a message</span>
       }
-      <div class="terms_container">
-        <img src="./assets/img/contact/checkbox_empty.svg" alt="" />
-        <span>
-          I've read the
-          <a [routerLink]="['imprint']" routerLinkActive="active"
-            >privacy policy
-          </a>
-          and agree to processing of my data as outlined.
-        </span>
+      <div class="flex_column_container">
+        <div>
+          <div class="terms_container">
+            <div (click)="togglePrivacyPolicy()">
+              @if (privacyPolicyChecked == false) {<img
+                src="./assets/img/contact/checkbox_empty.svg"
+                alt=""
+              />} @else {<img
+                src="./assets/img/contact/checkbox_filled.svg"
+                alt=""
+              />}
+            </div>
+            <span>
+              I've read the
+              <a [routerLink]="['imprint']" routerLinkActive="active"
+                >privacy policy
+              </a>
+              and agree to processing of my data as outlined.
+            </span>
+          </div>
+          @if (!privacyPolicyChecked && message.valid && email.valid &&
+          name.valid) {
+          <!-- @if (!message.valid && message.touched && !message.disabled) { -->
+          <span>Please accept the therms</span>
+          }
+        </div>
+        <div>
+          @if (contactForm.valid && privacyPolicyChecked) {<button
+            type="submit"
+          >
+            Send</button
+          >} @else {<button class="button_disbaled">Send</button>}
+        </div>
       </div>
-      <button type="submit">Send</button>
       <div class="go_up_container">
         <img src="./assets/img/contact/go_up.svg" alt="" />
       </div>

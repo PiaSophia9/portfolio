@@ -15,6 +15,8 @@ import { RouterModule } from '@angular/router';
 export class ContactComponent {
   http = inject(HttpClient);
   // in der app.config.ts http-cliente hinzugefügt
+  sendWasTouched = false;
+  privacyPolicyChecked = false;
 
   inputData = {
     name: '',
@@ -25,7 +27,7 @@ export class ContactComponent {
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://sophia-brouwers.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -53,6 +55,14 @@ export class ContactComponent {
     }
   }
 
+  togglePrivacyPolicy() {
+    if (this.privacyPolicyChecked) {
+      this.privacyPolicyChecked = false;
+    } else {
+      this.privacyPolicyChecked = true;
+    }
+  }
+
   // onSubmit(ngForm: NgForm) {
   //   if (ngForm.valid && ngForm.submitted) {
   //     console.log(this.inputData);
@@ -61,5 +71,10 @@ export class ContactComponent {
 }
 
 // if (!message.valid && message.touched) {
+//   <span>Please enter a message</span>
+//   }
+
+// @if (!message.valid && ) {
+//   <!-- @if (!message.valid && message.touched && !message.disabled) { -->
 //   <span>Please enter a message</span>
 //   }
