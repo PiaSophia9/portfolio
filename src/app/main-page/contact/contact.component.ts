@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 // import AOS from 'aos';
@@ -12,15 +13,53 @@ import { RouterModule } from '@angular/router';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  http = inject(HttpClient);
+  // in der app.config.ts http-cliente hinzugefügt
+
   inputData = {
-    inputName: '',
-    inputEmail: '',
-    inputMessage: '',
+    name: '',
+    email: '',
+    message: '',
+  };
+
+  mailTest = true;
+
+  post = {
+    endPoint: 'https://deineDomain.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.valid && ngForm.submitted) {
-      console.log(this.inputData);
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http
+        .post(this.post.endPoint, this.post.body(this.inputData))
+        .subscribe({
+          next: (response) => {
+            ngForm.resetForm();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      ngForm.resetForm();
     }
   }
+
+  // onSubmit(ngForm: NgForm) {
+  //   if (ngForm.valid && ngForm.submitted) {
+  //     console.log(this.inputData);
+  //   }
+  // }
 }
+
+// if (!message.valid && message.touched) {
+//   <span>Please enter a message</span>
+//   }

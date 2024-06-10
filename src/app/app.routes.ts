@@ -3,7 +3,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: '/',
     component: MainPageComponent,
   },
 ];

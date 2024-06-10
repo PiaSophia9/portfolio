@@ -1,6 +1,6 @@
 <section>
   <div class="background_container">
-    <!-- <img class="blue_blurr" src="./assets/img/skills/blurr.svg" alt="" /> -->
+    <img src="./assets/img/contact/blurr.svg" alt="" />
   </div>
   <div class="main_content_container">
     <div
@@ -40,14 +40,14 @@
       data-aos-anchor-placement="top-center"
     >
       <input
-        [(ngModel)]="inputData.inputName"
+        [(ngModel)]="inputData.name"
         type="text"
         placeholder="Your name"
         name="name"
         required
       />
       <input
-        [(ngModel)]="inputData.inputEmail"
+        [(ngModel)]="inputData.email"
         type="email"
         placeholder="Your email"
         name="email"
@@ -55,14 +55,19 @@
         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
       />
       <textarea
-        [(ngModel)]="inputData.inputMessage"
+        #message="ngModel"
+        minlength="4"
+        [(ngModel)]="inputData.message"
         name="message"
-        id=""
+        id="message"
         rows="10"
         placeholder="Your message"
-        type="text"
         required
       ></textarea>
+      @if (!message.valid && message.touched) {
+      <!-- @if (!message.valid && message.touched && !message.disabled) { -->
+      <span>Please enter a message</span>
+      }
       <div class="terms_container">
         <img src="./assets/img/contact/checkbox_empty.svg" alt="" />
         <span>
