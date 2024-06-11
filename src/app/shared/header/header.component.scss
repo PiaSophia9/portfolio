@@ -32,6 +32,9 @@ nav {
   display: flex;
   gap: 24px;
   margin-right: 80px;
+  div {
+    font-size: 24px;
+  }
   a {
     font-size: 24px;
     color: white;
@@ -42,4 +45,8 @@ nav {
       color: $light_blue;
     }
   }
+}
+
+.blue {
+  color: $light_blue;
 }

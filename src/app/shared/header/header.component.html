@@ -5,8 +5,23 @@
     <span class="logo">a</span>
   </div>
   <div class="link_container">
-    <a href="#aboutMe">About me</a>
-    <a href="#skills">Skills</a>
-    <a href="#portfolio">Portfolio</a>
+    <a href="#aboutMe">{{ "About me" | translate }}</a>
+    <a href="#skills">{{ "Skills" | translate }}</a>
+    <a href="#portfolio">{{ "Portfolio" | translate }}</a>
+    <div>
+      <a
+        href="#"
+        (click)="translate.switchLanguage('de')"
+        [ngClass]="{ blue: translate.isGerman }"
+        >DE</a
+      >
+      |
+      <a
+        href="#"
+        (click)="translate.switchLanguage('en')"
+        [ngClass]="{ blue: !translate.isGerman }"
+        >EN</a
+      >
+    </div>
   </div>
 </nav>
