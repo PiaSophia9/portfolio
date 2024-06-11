@@ -1,3 +1,7 @@
+$dark_blue: #141d2f;
+$light_blue: #00bee8;
+$purple: #4b47ff;
+
 html {
   scroll-padding-top: 40px;
 }
@@ -12,7 +16,7 @@ body {
 body {
   margin: 0;
   color: white;
-  background-color: #141d2f;
+  background-color: $dark_blue;
   font-family: "Poppins";
   // max-width: 1920px;
   display: flex;
@@ -26,7 +30,7 @@ button {
   height: 50px;
   font-family: "Poppins";
   font-size: 24px;
-  background-color: #00bee8;
+  background-color: $light_blue;
   color: white;
   border-radius: 10px;
   border: none;
@@ -34,7 +38,7 @@ button {
   transition: 125ms ease-in;
   &:hover {
     transform: scale(1.2);
-    background-color: #4b47ff;
+    background-color: $purple;
   }
 }
 
@@ -46,8 +50,8 @@ textarea {
   box-sizing: border-box;
   color: white;
   &:focus {
-    outline: #00bee8 solid 1px;
-    background-color: #141d2f;
+    outline: $light_blue solid 1px;
+    background-color: $dark_blue;
   }
 }
 
@@ -74,7 +78,7 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00bee8;
+  background: $light_blue;
   border-radius: 8px;
 }
 

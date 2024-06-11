@@ -42,12 +42,12 @@ export class ContactComponent {
         .post(this.post.endPoint, this.post.body(this.inputData))
         .subscribe({
           next: (response) => {
-            ngForm.resetForm();
-            this.privacyPolicyChecked = false;
             this.sendWasTouched = true;
             setTimeout(() => {
               this.sendWasTouched = false;
             }, 2000);
+            ngForm.resetForm();
+            this.privacyPolicyChecked = false;
           },
           error: (error) => {
             console.error(error);

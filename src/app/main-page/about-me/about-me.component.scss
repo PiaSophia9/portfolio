@@ -1,3 +1,5 @@
+@import "./../../../styles.scss";
+
 section {
   width: 100%;
 }
@@ -25,8 +27,8 @@ section {
   .left_side {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    max-width: 500px;
+    // width: 50%;
+    // max-width: 500px;
     margin-right: 80px;
     .icon_text_container {
       display: flex;
@@ -46,7 +48,7 @@ section {
     .profile_img {
       width: 400px;
       border-radius: 100%;
-      border: 5px solid #00bee8;
+      border: 5px solid $light_blue;
     }
     .line {
       width: 160px;

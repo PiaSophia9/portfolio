@@ -1,3 +1,5 @@
+@import "./../../../styles.scss";
+
 section {
   position: absolute;
   display: flex;
@@ -5,8 +7,8 @@ section {
   align-items: center;
   width: 100%;
   height: 200px;
-  background-color: #141d2f;
-  border-top: 4px solid #00bee8;
+  background-color: $dark_blue;
+  border-top: 4px solid $light_blue;
   z-index: 2;
 }
 
@@ -21,7 +23,7 @@ section {
       font-weight: 600;
     }
     .logo_colored {
-      color: #00bee8;
+      color: $light_blue;
     }
   }
   a {
@@ -29,7 +31,7 @@ section {
     color: white;
     transition: 125ms ease-in;
     &:hover {
-      color: #00bee8;
+      color: $light_blue;
     }
   }
 }
