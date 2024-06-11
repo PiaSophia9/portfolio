@@ -44,6 +44,10 @@ export class ContactComponent {
           next: (response) => {
             ngForm.resetForm();
             this.privacyPolicyChecked = false;
+            this.sendWasTouched = true;
+            setTimeout(() => {
+              this.sendWasTouched = false;
+            }, 2000);
           },
           error: (error) => {
             console.error(error);
