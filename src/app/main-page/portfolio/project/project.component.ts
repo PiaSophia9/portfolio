@@ -33,7 +33,7 @@ export class ProjectComponent {
       isReversed: false,
     },
     {
-      imageSrc: './assets/img/portfolio/laptop.svg',
+      imageSrc: './assets/img/portfolio/lapto_pollo_loco.svg',
       title: 'El Pollo Loco',
       technologies: ['JavaScript | HTML | CSS'],
       description:

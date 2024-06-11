@@ -12,4 +12,12 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
   translate = inject(TranslationService);
+
+  constructor() {
+    this.logFunction();
+  }
+
+  logFunction() {
+    console.log('this.translate.isGerman', this.translate.isGerman);
+  }
 }

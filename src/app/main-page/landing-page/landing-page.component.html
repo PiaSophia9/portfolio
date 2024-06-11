@@ -13,9 +13,14 @@
   </div>
   <div class="landing-page_container">
     <div class="headline_container">
-      <div class="vertical_headline">{{ "I am" | translate }}</div>
-      <div class="horizontal_headline_container">
-        <span class="name">Sophia Brouwers</span><br />
+      <div [ngClass]="{ d_none: translate.isGerman }" class="vertical_headline">
+        {{ "I am" | translate }}
+      </div>
+      <div
+        class="horizontal_headline_container"
+        [ngClass]="{ center: translate.isGerman }"
+      >
+        <span class="name">Sophia Brouwers</span>
         <span class="job_title">{{ "jobTitle" | translate }}</span>
       </div>
     </div>

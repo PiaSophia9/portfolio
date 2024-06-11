@@ -43,6 +43,9 @@ section {
       margin-bottom: -8px;
     }
     .horizontal_headline_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       .name {
         font-weight: 700;
         font-size: 96px;
@@ -100,6 +103,14 @@ section {
       }
     }
   }
+}
+
+.d_none {
+  display: none;
+}
+
+.center {
+  align-items: center;
 }
 
 @keyframes MoveUpDown {
