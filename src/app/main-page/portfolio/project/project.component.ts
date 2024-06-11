@@ -1,14 +1,18 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslationService } from '../../../service/translation.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss',
 })
 export class ProjectComponent {
+  translate = inject(TranslationService);
+
   projects: {
     imageSrc: string;
     title: string;

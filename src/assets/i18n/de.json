@@ -1,5 +1,58 @@
 {
   "About me": "Über mich",
   "Skills": "Skills",
-  "Portfolio": "Portfolio"
+  "Portfolio": "Portfolio",
+
+  "imprint": [
+    {
+      "headline": "Impressum",
+      "legal": "Rechtliche Informationen gemäß § 5 TMG",
+      "contactDetails": "Kontaktdaten"
+    }
+  ],
+  "imprintHeadline": "Impressum",
+  "imprintLegal": "Rechtliche Informationen gemäß § 5 TMG",
+  "imprintContactDetails": "Kontaktdaten",
+  "email": "E-Mail",
+  "phone": "Telefon",
+
+  "I am": "Ich bin",
+  "jobTitle": "WEB-ENTWICKLERIN",
+  "buttonLandingpage": "Kontakt",
+  "scrollDown": "Scrollen",
+
+  "aboutMeHeadline": "Über mich",
+  "aboutMeIntroduction": "Als Junior Frontend-Entwicklerin mit Fähigkeiten in JavaScript und Angular liebe ich es, interaktive und benutzerfreundliche Webanwendungen zu erstellen. Mein Portfolio zeigt Projekte, die ich sowohl eigenständig als auch im Team umgesetzt habe, mit Fokus auf sauberen Code und responsives Design.",
+  "aboutMeFirstParagraph": "Mein Interesse an der Softwareentwicklung begann, als ich einen Online-Shop betrieb und meine eigene Website mit einem Website-Builder erstellte. Dies weckte meine Leidenschaft für Webtechnologien und führte mich dazu, meine Ausbildung in diesem Bereich zu vertiefen. Der Wechsel vom E-Commerce zur Webentwicklung ermöglichte es mir, meine Detailgenauigkeit und Problemlösungsfähigkeiten einzusetzen, um reibungslose digitale Erlebnisse zu schaffen.",
+  "aboutMeSecondParagraph": "Ich bin sehr fokussiert und arbeite gerne im Team, wobei ich positiv zur Arbeitsumgebung beitrage. Ich freue mich darauf, als Entwicklerin zu wachsen und an innovativen Projekten zu arbeiten. Wenn Sie eine engagierte und kreative Entwicklerin suchen, lassen Sie uns in Kontakt treten und die digitalen Ziele Ihres Unternehmens gemeinsam erreichen.",
+
+  "skillsHeadline": "Fähigkeiten",
+  "skillsParagraph": "Ich habe Erfahrungen in der Erstellung von Projekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt.",
+  "skillsButton": "Kontakt",
+
+  "portfolioParagraph": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+
+  "joinParagraph": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+  "polloLocoParagraph": "Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Salsa-Flaschen zu finden, um gegen das riesige Huhn zu kämpfen.",
+  "otherParagraph": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+
+  "contactHeadline": "Kontakt",
+  "contactSubHeadline": "Haben Sie ein Problem zu lösen?",
+  "contactParagraph": "Kontaktieren Sie mich über dieses Formular, ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+  "contactParagraphQuestion": "Benötigen Sie eine Frontend-Entwicklerin? Kontaktieren Sie mich!",
+  "contactContactDetails": "Kontaktdaten",
+  "contactName": "Ihr Name",
+  "contactEmail": "Ihre E-Mail",
+  "contactMessage": "Ihre Nachricht",
+  "thermsPart1": "Ich habe die",
+  "thermsLink": "Datenschutzerklärung",
+  "thermsPart2": "gelesen und stimme der Verarbeitung meiner Daten zu.",
+  "thermsButton": "Senden",
+  "contactConfirmation": "Vielen Dank für Ihre Nachricht!",
+  "contactWarningName": "Bitte geben Sie Ihren Namen ein",
+  "contactWarningEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+  "contactWarningMessage": "Bitte geben Sie eine Nachricht ein",
+  "contactWarningTherms": "Bitte akzeptieren Sie die Bedingungen",
+
+  "footerImprint": "Impressum"
 }

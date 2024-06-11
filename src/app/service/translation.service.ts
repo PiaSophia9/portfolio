@@ -18,5 +18,6 @@ export class TranslationService {
     } else {
       this.isGerman = false;
     }
+    console.log('is German', this.isGerman);
   }
 }

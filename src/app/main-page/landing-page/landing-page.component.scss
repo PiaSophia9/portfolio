@@ -38,19 +38,19 @@ section {
     display: flex;
     .vertical_headline {
       transform: rotateZ(-90deg);
-      font-size: 72px;
-      margin-right: -70px;
+      font-size: 92px;
+      margin-right: -104px;
       margin-bottom: -8px;
     }
     .horizontal_headline_container {
       .name {
         font-weight: 700;
-        font-size: 80px;
+        font-size: 96px;
       }
       .job_title {
         color: $purple;
         font-weight: 300;
-        font-size: 56px;
+        font-size: 80px;
       }
     }
   }

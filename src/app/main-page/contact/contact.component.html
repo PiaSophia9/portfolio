@@ -16,15 +16,16 @@
     >
       <div class="headline_container">
         <img src="./assets/img/contact/line.svg" alt="" />
-        <h1>Contact</h1>
+        <h1>{{ "contactHeadline" | translate }}</h1>
       </div>
       <div class="content_container">
-        <h2>Got a problem to solve?</h2>
+        <h2>{{ "contactSubHeadline" | translate }}</h2>
         <p>
-          Contact me through this form, I am interested in hearing from you,
-          knowing your ideas and contributing to your projects with my work.
+          {{ "contactParagraph" | translate }}
         </p>
-        <p>Need a Frontend developer? Contact me!</p>
+        <p>
+          {{ "contactParagraphQuestion" | translate }}
+        </p>
       </div>
     </div>
     <form
@@ -44,7 +45,7 @@
         [(ngModel)]="inputData.name"
         [ngClass]="{ outline_red: !name.valid && name.touched }"
         type="text"
-        placeholder="Your name"
+        [placeholder]="'contactName' | translate"
         name="name"
         minlength="2"
         autocomplete="off"
@@ -52,14 +53,14 @@
       />
       @if (!name.valid && name.touched) {
       <!-- @if (!message.valid && message.touched && !message.disabled) { -->
-      <span>Please enter your name</span>
+      <span>{{ "contactWarningName" | translate }}</span>
       }
       <input
         #email="ngModel"
         [(ngModel)]="inputData.email"
         [ngClass]="{ outline_red: !email.valid && email.touched }"
         type="email"
-        placeholder="Your email"
+        [placeholder]="'contactEmail' | translate"
         name="email"
         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         autocomplete="off"
@@ -67,7 +68,7 @@
       />
       @if (!email.valid && email.touched) {
       <!-- @if (!message.valid && message.touched && !message.disabled) { -->
-      <span>Please enter a valid email-address</span>
+      <span>{{ "contactWarningEmail" | translate }}</span>
       }
       <textarea
         #message="ngModel"
@@ -76,14 +77,14 @@
         name="message"
         id="message"
         rows="10"
-        placeholder="Your message"
+        [placeholder]="'contactMessage' | translate"
         minlength="4"
         autocomplete="off"
         required
       ></textarea>
       @if (!message.valid && message.touched) {
       <!-- @if (!message.valid && message.touched && !message.disabled) { -->
-      <span>Please enter a message</span>
+      <span>{{ "contactWarningMessage" | translate }}</span>
       }
       <div class="flex_column_container">
         <div>
@@ -98,25 +99,27 @@
               />}
             </div>
             <span>
-              I've read the
+              {{ "thermsPart1" | translate }}
               <a [routerLink]="['imprint']" routerLinkActive="active"
-                >privacy policy
+                >{{ "thermsLink" | translate }}
               </a>
-              and agree to processing of my data as outlined.
+              {{ "thermsPart2" | translate }}
             </span>
           </div>
           @if (!privacyPolicyChecked && message.valid && email.valid &&
           name.valid) {
           <!-- @if (!message.valid && message.touched && !message.disabled) { -->
-          <span>Please accept the therms</span>
+          <span>{{ "contactWarningTherms" | translate }}</span>
           }
         </div>
         <div>
           @if (contactForm.valid && privacyPolicyChecked) {<button
             type="submit"
           >
-            Send</button
-          >} @else {<button class="button_disbaled">Send</button>}
+            {{ "thermsButton" | translate }}</button
+          >} @else {<button class="button_disbaled">
+            {{ "thermsButton" | translate }}</button
+          >}
         </div>
       </div>
       <div class="go_up_container">

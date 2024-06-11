@@ -3,17 +3,21 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../service/translation.service';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, RouterModule, CommonModule],
+  imports: [FormsModule, RouterModule, CommonModule, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  translate = inject(TranslationService);
+
   http = inject(HttpClient);
   // in der app.config.ts http-cliente hinzugefügt
   sendWasTouched = false;

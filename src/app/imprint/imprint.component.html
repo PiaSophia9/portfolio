@@ -3,17 +3,17 @@
     <a [routerLink]="['']" routerLinkActive="active"
       ><img src="./assets/img/imprint/go_back.svg" alt=""
     /></a>
-    <h2>Imprint</h2>
-    <h3>Legal information according to § 5 TMG</h3>
+    <h2>{{ "imprintHeadline" | translate }}</h2>
+    <h3>{{ "imprintLegal" | translate }}</h3>
     <p>
       Sophia Brouwers <br />
       Süsterfeldstr. 24 <br />
       52072 Aachen
     </p>
-    <h3>Contact Details</h3>
+    <h3>{{ "imprintContactDetails" | translate }}</h3>
     <p>
-      Email: mail&#64;sophia-brouwers.de <br />
-      Phone: 0160 93891503
+      {{ "email" | translate }}: mail&#64;sophia-brouwers.de <br />
+      {{ "phone" | translate }}: 0160 93891503
     </p>
   </div>
 </section>
