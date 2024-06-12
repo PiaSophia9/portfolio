@@ -5,7 +5,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 3;
-  // max-width: 1920px;
+  max-width: 1920px;
 }
 
 .header_container {
@@ -30,6 +30,7 @@ nav {
 
 .link_container {
   display: flex;
+  align-items: center;
   gap: 24px;
   margin-right: 80px;
   div {
@@ -49,4 +50,19 @@ nav {
 
 .blue {
   color: $light_blue !important;
+}
+
+@media (max-width: 950px) {
+  .link_container {
+    div {
+      font-size: 20px;
+    }
+    font-size: 20px;
+    a {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
 }

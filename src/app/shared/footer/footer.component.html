@@ -1,20 +1,24 @@
 <section>
-  <div class="left">
-    <div class="logo_container">
-      <span class="logo">Soph</span>
-      <span class="logo_colored">i</span>
-      <span class="logo">a</span>
+  <div class="top">
+    <div class="left">
+      <div class="logo_container">
+        <span class="logo">Soph</span>
+        <span class="logo_colored">i</span>
+        <span class="logo">a</span>
+      </div>
     </div>
+    <span class="center">&#169; Sophia Brouwers 2024</span>
+    <div class="right">
+      @for (socialIcon of SocialIcons; track $index) {<a
+        href="{{ socialIcon.link }}"
+        target="_blank"
+        ><img class="social_icon" src="{{ socialIcon.imageSrc }}" alt="" /></a
+      >}
+    </div>
+  </div>
+  <div class="bottom">
     <a [routerLink]="['imprint']" routerLinkActive="active"
       >{{ "footerImprint" | translate }}
     </a>
-  </div>
-  <span class="center">&#169; Sophia Brouwers 2024</span>
-  <div class="right">
-    @for (socialIcon of SocialIcons; track $index) {<a
-      href="{{ socialIcon.link }}"
-      target="_blank"
-      ><img class="social_icon" src="{{ socialIcon.imageSrc }}" alt="" /></a
-    >}
   </div>
 </section>

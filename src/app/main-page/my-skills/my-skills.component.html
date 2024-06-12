@@ -3,7 +3,12 @@
     <img class="blue_blurr" src="./assets/img/skills/blurr.svg" alt="" />
   </div>
   <div class="main_content_container">
-    <div class="left_side" data-aos="fade-right">
+    <div
+      class="left_side"
+      data-aos="fade-right"
+      data-aos-delay="225"
+      data-aos-easing="ease-in-out"
+    >
       @for (skill of skills; track $index) {
       <div class="img_text_container">
         <!-- <div class="img_container"> -->
@@ -14,17 +19,22 @@
       <!-- </div> -->
       }
     </div>
-    <div class="right_side" data-aos="fade-left">
+    <div
+      class="right_side"
+      data-aos="fade-left"
+      data-aos-delay="400"
+      data-aos-easing="ease-in-out"
+    >
       <div class="headline_container">
-        <h1>{{ "skillsHeadline" | translate }}</h1>
+        <h1>{{ "skills.headline" | translate }}</h1>
         <img src="./assets/img/skills/line.svg" alt="" />
       </div>
 
       <p>
-        {{ "skillsParagraph" | translate }}
+        {{ "skills.paragraph" | translate }}
       </p>
       <a href="#contact"
-        ><button>{{ "skillsButton" | translate }}</button></a
+        ><button>{{ "skills.button" | translate }}</button></a
       >
     </div>
   </div>

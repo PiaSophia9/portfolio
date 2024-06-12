@@ -1,13 +1,9 @@
 @for (project of projects; track $index) {
 <div
-  [ngClass]="{ project_container: true, reversed: project.isReversed }"
   data-aos="fade-up"
-  data-aos-delay="0"
-  data-aos-duration="125"
+  data-aos-delay="400"
   data-aos-easing="ease-in-out"
-  data-aos-mirror="true"
-  data-aos-once="false"
-  data-aos-anchor-placement="top-center"
+  [ngClass]="{ project_container: true, reversed: project.isReversed }"
 >
   <div class="left_side">
     <img src="{{ project.imageSrc }}" alt="" />
@@ -15,9 +11,16 @@
   <div class="right_side">
     <h2>{{ project.title }}</h2>
     <h3>{{ project.technologies }}</h3>
+    @if (translate.isGerman) {
+    <p>
+      {{ project.beschreibung }}
+    </p>
+    } @else {
     <p>
       {{ project.description }}
     </p>
+    }
+
     <div class="button_container">
       <button>Live test</button>
       <a href="{{ project.linkGithub }}" target="_blank"

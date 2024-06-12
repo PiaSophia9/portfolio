@@ -3,7 +3,8 @@
 .project_container {
   display: flex;
   align-items: center;
-  padding-right: 160px;
+  padding-right: 80px;
+  padding-left: 80px;
   gap: 80px;
   .left_side {
     width: 50%;
@@ -59,4 +60,22 @@
 
 .reversed {
   flex-direction: row-reverse;
+}
+
+@media (max-width: 900px) {
+  .project_container {
+    flex-direction: column;
+    gap: 0;
+    .right_side {
+      width: 100%;
+      align-items: center;
+    }
+    .left_side {
+      width: 100%;
+      img {
+        margin-top: -10%;
+        margin-bottom: -20%;
+      }
+    }
+  }
 }

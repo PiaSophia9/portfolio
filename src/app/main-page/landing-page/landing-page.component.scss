@@ -80,6 +80,7 @@ section {
     bottom: 0;
     text-decoration: none;
     color: white;
+    z-index: 2;
     &:hover {
       cursor: pointer;
       // color: $light_blue;
@@ -120,5 +121,46 @@ section {
   }
   50% {
     bottom: -20px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .landing-page_container {
+    .headline_container {
+      .vertical_headline {
+        font-size: 76px;
+        margin-right: -80px;
+      }
+      .horizontal_headline_container {
+        .name {
+          font-size: 80px;
+        }
+        .job_title {
+          font-size: 64px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .landing-page_container {
+    .headline_container {
+      .vertical_headline {
+        font-size: 60px;
+        margin-right: -64px;
+      }
+      .horizontal_headline_container {
+        .name {
+          font-size: 64px;
+        }
+        .job_title {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+  .scroll_down {
+    font-size: 20px;
   }
 }

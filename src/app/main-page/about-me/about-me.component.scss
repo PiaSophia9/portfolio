@@ -55,3 +55,40 @@ section {
     }
   }
 }
+
+@media (max-width: 1050px) {
+  // .right_side {
+  .profile_img {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .main_content_container {
+    flex-direction: column-reverse;
+    padding: 80px 0px 80px 0;
+    .left_side {
+      h1 {
+        text-align: center;
+      }
+      margin-right: 80px;
+      margin-left: 80px;
+    }
+  }
+  .line {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .main_content_container {
+    padding: 10px 0px 10px 0;
+    .left_side {
+      h1 {
+        text-align: center;
+      }
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 <section>
-  <div class="background_container">
+  <!-- <div class="background_container">
     <img src="./assets/img/contact/blurr.svg" alt="" />
-  </div>
+  </div> -->
   <div class="main_content_container">
     <div
       class="left_side"
@@ -10,21 +10,18 @@
       data-aos-delay="50"
       data-aos-duration="125"
       data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-center"
     >
       <div class="headline_container">
         <img src="./assets/img/contact/line.svg" alt="" />
-        <h1>{{ "contactHeadline" | translate }}</h1>
+        <h1>{{ "contact.headline" | translate }}</h1>
       </div>
       <div class="content_container">
-        <h2>{{ "contactSubHeadline" | translate }}</h2>
+        <h2>{{ "contact.subHeadline" | translate }}</h2>
         <p>
-          {{ "contactParagraph" | translate }}
+          {{ "contact.paragraph" | translate }}
         </p>
         <p>
-          {{ "contactParagraphQuestion" | translate }}
+          {{ "contact.paragraphQuestion" | translate }}
         </p>
       </div>
     </div>
@@ -36,16 +33,13 @@
       data-aos-delay="50"
       data-aos-duration="125"
       data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-center"
     >
       <input
         #name="ngModel"
         [(ngModel)]="inputData.name"
         [ngClass]="{ outline_red: !name.valid && name.touched }"
         type="text"
-        [placeholder]="'contactName' | translate"
+        [placeholder]="'contact.name' | translate"
         name="name"
         minlength="2"
         autocomplete="off"
@@ -53,14 +47,14 @@
       />
       @if (!name.valid && name.touched) {
       <!-- @if (!message.valid && message.touched && !message.disabled) { -->
-      <span>{{ "contactWarningName" | translate }}</span>
+      <span>{{ "contact.warningName" | translate }}</span>
       }
       <input
         #email="ngModel"
         [(ngModel)]="inputData.email"
         [ngClass]="{ outline_red: !email.valid && email.touched }"
         type="email"
-        [placeholder]="'contactEmail' | translate"
+        [placeholder]="'contact.email' | translate"
         name="email"
         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         autocomplete="off"
@@ -68,7 +62,7 @@
       />
       @if (!email.valid && email.touched) {
       <!-- @if (!message.valid && message.touched && !message.disabled) { -->
-      <span>{{ "contactWarningEmail" | translate }}</span>
+      <span>{{ "contact.warningEmail" | translate }}</span>
       }
       <textarea
         #message="ngModel"
@@ -77,14 +71,14 @@
         name="message"
         id="message"
         rows="10"
-        [placeholder]="'contactMessage' | translate"
+        [placeholder]="'contact.message' | translate"
         minlength="4"
         autocomplete="off"
         required
       ></textarea>
       @if (!message.valid && message.touched) {
       <!-- @if (!message.valid && message.touched && !message.disabled) { -->
-      <span>{{ "contactWarningMessage" | translate }}</span>
+      <span>{{ "contact.warningMessage" | translate }}</span>
       }
       <div class="flex_column_container">
         <div>
@@ -99,26 +93,26 @@
               />}
             </div>
             <span>
-              {{ "thermsPart1" | translate }}
+              {{ "contact.thermsPart1" | translate }}
               <a [routerLink]="['imprint']" routerLinkActive="active"
-                >{{ "thermsLink" | translate }}
+                >{{ "contact.thermsLink" | translate }}
               </a>
-              {{ "thermsPart2" | translate }}
+              {{ "contact.thermsPart2" | translate }}
             </span>
           </div>
           @if (!privacyPolicyChecked && message.valid && email.valid &&
           name.valid) {
           <!-- @if (!message.valid && message.touched && !message.disabled) { -->
-          <span>{{ "contactWarningTherms" | translate }}</span>
+          <span>{{ "contact.warningTherms" | translate }}</span>
           }
         </div>
         <div>
           @if (contactForm.valid && privacyPolicyChecked) {<button
             type="submit"
           >
-            {{ "thermsButton" | translate }}</button
+            {{ "contact.thermsButton" | translate }}</button
           >} @else {<button class="button_disbaled">
-            {{ "thermsButton" | translate }}</button
+            {{ "contact.thermsButton" | translate }}</button
           >}
         </div>
       </div>

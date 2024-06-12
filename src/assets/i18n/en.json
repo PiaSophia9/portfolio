@@ -1,58 +1,59 @@
 {
-  "About me": "About me",
-  "Skills": "Skills",
-  "Portfolio": "Portfolio",
+  "header": {
+    "about": "About me",
+    "skills": "Skills",
+    "portfolio": "Portfolio"
+  },
 
-  "imprint": [
-    {
-      "headline": "Imprint",
-      "legal": "Legal information according to § 5 TMG",
-      "contactDetails": "Contact Details"
-    }
-  ],
-  "imprintHeadline": "Imprint",
-  "imprintLegal": "Legal information according to § 5 TMG",
-  "imprintContactDetails": "Contact Details",
-  "email": "Email",
-  "phone": "Phone",
+  "imprint": {
+    "headline": "Imprint",
+    "legal": "Legal information according to § 5 TMG",
+    "contactDetails": "Contact Details",
+    "email": "Email",
+    "phone": "Phone"
+  },
 
-  "I am": "I am",
-  "jobTitle": "FRONTEND DEVELOPER",
-  "buttonLandingpage": "Let's talk!",
-  "scrollDown": "Scroll down",
+  "landingPage": {
+    "iAm": "I am",
+    "jobTitle": "FRONTEND DEVELOPER",
+    "button": "Let's talk!",
+    "scrollDown": "Scroll down"
+  },
 
-  "aboutMeHeadline": "About me",
-  "aboutMeIntroduction": "As a Junior Frontend Developer with skills in JavaScript and Angular, I am passionate about building interactive and user-friendly web applications. My portfolio showcases projects I've done independently and with teams, focusing on clean code and responsive design.",
-  "aboutMeFirstParagraph": "My interest in software development started while running an online store, where I built my own website using a website builder. This sparked my passion for web technologies and led me to further my education in this field. Moving from e-commerce to web development, I've used my attention to detail and problem-solving skills to create smooth digital experiences.",
-  "aboutMeSecondParagraph": "I'm highly focused and enjoy working in teams, contributing positively to the work environment. I'm eager to grow as a developer and work on innovative projects. If you're looking for a dedicated and creative developer, let's connect and achieve your company's digital goals together.",
+  "aboutMe": {
+    "headline": "About me",
+    "introduction": "As a Junior Frontend Developer with skills in JavaScript and Angular, I am passionate about building interactive and user-friendly web applications. My portfolio showcases projects I've done independently and with teams, focusing on clean code and responsive design.",
+    "firstParagraph": "My interest in software development started while running an online store, where I built my own website using a website builder. This sparked my passion for web technologies and led me to further my education in this field. Moving from e-commerce to web development, I've used my attention to detail and problem-solving skills to create smooth digital experiences.",
+    "secondParagraph": "I'm highly focused and enjoy working in teams, contributing positively to the work environment. I'm eager to grow as a developer and work on innovative projects. If you're looking for a dedicated and creative developer, let's connect and achieve your company's digital goals together."
+  },
 
-  "skillsHeadline": "My Skills",
-  "skillsParagraph": "I have gained experience in building projects with various front end technologies and concepts.",
-  "skillsButton": "Get in touch",
+  "skills": {
+    "headline": "My Skills",
+    "paragraph": "I have gained experience in building projects with various front end technologies and concepts.",
+    "button": "Get in touch"
+  },
 
   "portfolioParagraph": "Explore a selection of my work here - Interact with projects to see my skills in action.",
 
-  "joinParagraph": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-  "polloLocoParagraph": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the giant Chicken.",
-  "otherParagraph": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-
-  "contactHeadline": "Contact",
-  "contactSubHeadline": "Got a problem to solve?",
-  "contactParagraph": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
-  "contactParagraphQuestion": "Need a Frontend developer? Contact me!",
-  "contactContactDetails": "Contact Details",
-  "contactName": "Your name",
-  "contactEmail": "Your email",
-  "contactMessage": "Your message",
-  "thermsPart1": "I've read the",
-  "thermsLink": "privacy policy",
-  "thermsPart2": "and agree to processing of my data as outlined.",
-  "thermsButton": "Send",
-  "contactConfirmation": "Thank you for your message!",
-  "contactWarningName": "Please enter your name",
-  "contactWarningEmail": "Please enter a valid email-address",
-  "contactWarningMessage": "Please enter a message",
-  "contactWarningTherms": "Please accept the therms",
+  "contact": {
+    "headline": "Contact",
+    "subHeadline": "Got a problem to solve?",
+    "paragraph": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "paragraphQuestion": "Need a Frontend developer? Contact me!",
+    "contactDetails": "Contact Details",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+    "thermsPart1": "I've read the",
+    "thermsLink": "privacy policy",
+    "thermsPart2": "and agree to processing of my data as outlined.",
+    "thermsButton": "Send",
+    "confirmation": "Thank you for your message!",
+    "warningName": "Please enter your name",
+    "warningEmail": "Please enter a valid email-address",
+    "warningMessage": "Please enter a message",
+    "warningTherms": "Please accept the therms"
+  },
 
   "footerImprint": "Imprint"
 }

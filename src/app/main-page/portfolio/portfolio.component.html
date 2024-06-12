@@ -8,12 +8,23 @@
     </div>
   </div>
   <div class="main_content_container">
-    <div class="headline_container" data-aos="fade-left">
-      <img src="./assets/img/portfolio/short_line.svg" alt="" />
+    <div
+      class="headline_container"
+      data-aos="slide-right"
+      data-aos-delay="225"
+      data-aos-easing="ease-in-out"
+      id="headline"
+    >
+      <div class="line"></div>
       <h1>Portfolio</h1>
-      <img src="./assets/img/portfolio/long_line.svg" alt="" />
+      <div class="line"></div>
     </div>
-    <span data-aos="fade-left">{{ "portfolioParagraph" | translate }}</span>
+    <span
+      data-aos="slide-right"
+      data-aos-delay="100"
+      data-aos-easing="ease-in"
+      >{{ "portfolioParagraph" | translate }}</span
+    >
     <div class="project">
       <app-project></app-project>
     </div>

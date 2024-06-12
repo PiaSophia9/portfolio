@@ -14,17 +14,17 @@
   <div class="landing-page_container">
     <div class="headline_container">
       <div [ngClass]="{ d_none: translate.isGerman }" class="vertical_headline">
-        {{ "I am" | translate }}
+        {{ "landingPage.iAm" | translate }}
       </div>
       <div
         class="horizontal_headline_container"
         [ngClass]="{ center: translate.isGerman }"
       >
         <span class="name">Sophia Brouwers</span>
-        <span class="job_title">{{ "jobTitle" | translate }}</span>
+        <span class="job_title">{{ "landingPage.jobTitle" | translate }}</span>
       </div>
     </div>
-    <button>{{ "buttonLandingpage" | translate }}</button>
+    <button>{{ "landingPage.button" | translate }}</button>
   </div>
   <div class="bottom_container">
     <div class="social_icons_container">
@@ -36,7 +36,7 @@
       >}
     </div>
     <a class="scroll_down" href="#aboutMe">
-      <span>{{ "scrollDown" | translate }}</span>
+      <span>{{ "landingPage.scrollDown" | translate }}</span>
       <img src="./assets/img/icons/scroll_down.svg" alt="" />
     </a>
   </div>
