@@ -35,6 +35,7 @@ section {
       gap: 24px;
       img {
         transition: 125ms ease-in;
+        width: 45px;
         &:hover {
           transform: scale(1.3);
         }
