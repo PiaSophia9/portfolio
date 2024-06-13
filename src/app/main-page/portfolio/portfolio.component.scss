@@ -61,6 +61,12 @@ section {
   }
 }
 
+@media (max-width: 900px) {
+  .main_content_container {
+    margin-bottom: -48px;
+  }
+}
+
 @media (max-width: 500px) {
   .main_content_container {
     span {

@@ -104,12 +104,17 @@ section {
   }
 }
 
+@media (max-width: 600px) {
+  .right_side {
+    width: 100%;
+  }
+}
+
 @media (max-width: 500px) {
   .main_content_container {
     padding: 80px 0 80px 0;
   }
   .right_side {
-    width: 100%;
     p {
       margin-left: 10px;
       margin-right: 10px;

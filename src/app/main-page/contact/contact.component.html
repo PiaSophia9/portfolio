@@ -25,103 +25,105 @@
         </p>
       </div>
     </div>
-    <form
-      (ngSubmit)="onSubmit(contactForm)"
-      #contactForm="ngForm"
-      class="right_side"
-      data-aos="fade-left"
-      data-aos-delay="50"
-      data-aos-duration="125"
-      data-aos-easing="ease-in-out"
-    >
-      <input
-        #name="ngModel"
-        [(ngModel)]="inputData.name"
-        [ngClass]="{ outline_red: !name.valid && name.touched }"
-        type="text"
-        [placeholder]="'contact.name' | translate"
-        name="name"
-        minlength="2"
-        autocomplete="off"
-        required
-      />
-      @if (!name.valid && name.touched) {
-      <!-- @if (!message.valid && message.touched && !message.disabled) { -->
-      <span>{{ "contact.warningName" | translate }}</span>
-      }
-      <input
-        #email="ngModel"
-        [(ngModel)]="inputData.email"
-        [ngClass]="{ outline_red: !email.valid && email.touched }"
-        type="email"
-        [placeholder]="'contact.email' | translate"
-        name="email"
-        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-        autocomplete="off"
-        required
-      />
-      @if (!email.valid && email.touched) {
-      <!-- @if (!message.valid && message.touched && !message.disabled) { -->
-      <span>{{ "contact.warningEmail" | translate }}</span>
-      }
-      <textarea
-        #message="ngModel"
-        [(ngModel)]="inputData.message"
-        [ngClass]="{ outline_red: !message.valid && message.touched }"
-        name="message"
-        id="message"
-        rows="10"
-        [placeholder]="'contact.message' | translate"
-        minlength="4"
-        autocomplete="off"
-        required
-      ></textarea>
-      @if (!message.valid && message.touched) {
-      <!-- @if (!message.valid && message.touched && !message.disabled) { -->
-      <span>{{ "contact.warningMessage" | translate }}</span>
-      }
-      <div class="flex_column_container">
-        <div>
-          <div class="terms_container">
-            <div (click)="togglePrivacyPolicy()">
-              @if (privacyPolicyChecked == false) {<img
-                src="./assets/img/contact/checkbox_empty.svg"
-                alt=""
-              />} @else {<img
-                src="./assets/img/contact/checkbox_filled.svg"
-                alt=""
-              />}
+    <div class="form_container">
+      <form
+        (ngSubmit)="onSubmit(contactForm)"
+        #contactForm="ngForm"
+        class="right_side"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="125"
+        data-aos-easing="ease-in-out"
+      >
+        <input
+          #name="ngModel"
+          [(ngModel)]="inputData.name"
+          [ngClass]="{ outline_red: !name.valid && name.touched }"
+          type="text"
+          [placeholder]="'contact.name' | translate"
+          name="name"
+          minlength="2"
+          autocomplete="off"
+          required
+        />
+        @if (!name.valid && name.touched) {
+        <!-- @if (!message.valid && message.touched && !message.disabled) { -->
+        <span>{{ "contact.warningName" | translate }}</span>
+        }
+        <input
+          #email="ngModel"
+          [(ngModel)]="inputData.email"
+          [ngClass]="{ outline_red: !email.valid && email.touched }"
+          type="email"
+          [placeholder]="'contact.email' | translate"
+          name="email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          autocomplete="off"
+          required
+        />
+        @if (!email.valid && email.touched) {
+        <!-- @if (!message.valid && message.touched && !message.disabled) { -->
+        <span>{{ "contact.warningEmail" | translate }}</span>
+        }
+        <textarea
+          #message="ngModel"
+          [(ngModel)]="inputData.message"
+          [ngClass]="{ outline_red: !message.valid && message.touched }"
+          name="message"
+          id="message"
+          rows="10"
+          [placeholder]="'contact.message' | translate"
+          minlength="4"
+          autocomplete="off"
+          required
+        ></textarea>
+        @if (!message.valid && message.touched) {
+        <!-- @if (!message.valid && message.touched && !message.disabled) { -->
+        <span>{{ "contact.warningMessage" | translate }}</span>
+        }
+        <div class="flex_column_container">
+          <div>
+            <div class="terms_container">
+              <div (click)="togglePrivacyPolicy()">
+                @if (privacyPolicyChecked == false) {<img
+                  src="./assets/img/contact/checkbox_empty.svg"
+                  alt=""
+                />} @else {<img
+                  src="./assets/img/contact/checkbox_filled.svg"
+                  alt=""
+                />}
+              </div>
+              <span>
+                {{ "contact.thermsPart1" | translate }}
+                <a [routerLink]="['imprint']" routerLinkActive="active"
+                  >{{ "contact.thermsLink" | translate }}
+                </a>
+                {{ "contact.thermsPart2" | translate }}
+              </span>
             </div>
-            <span>
-              {{ "contact.thermsPart1" | translate }}
-              <a [routerLink]="['imprint']" routerLinkActive="active"
-                >{{ "contact.thermsLink" | translate }}
-              </a>
-              {{ "contact.thermsPart2" | translate }}
-            </span>
+            @if (!privacyPolicyChecked && message.valid && email.valid &&
+            name.valid) {
+            <!-- @if (!message.valid && message.touched && !message.disabled) { -->
+            <span>{{ "contact.warningTherms" | translate }}</span>
+            }
           </div>
-          @if (!privacyPolicyChecked && message.valid && email.valid &&
-          name.valid) {
-          <!-- @if (!message.valid && message.touched && !message.disabled) { -->
-          <span>{{ "contact.warningTherms" | translate }}</span>
-          }
+          <div>
+            @if (contactForm.valid && privacyPolicyChecked) {<button
+              type="submit"
+            >
+              {{ "contact.thermsButton" | translate }}</button
+            >} @else {<button class="button_disbaled">
+              {{ "contact.thermsButton" | translate }}</button
+            >}
+          </div>
         </div>
-        <div>
-          @if (contactForm.valid && privacyPolicyChecked) {<button
-            type="submit"
-          >
-            {{ "contact.thermsButton" | translate }}</button
-          >} @else {<button class="button_disbaled">
-            {{ "contact.thermsButton" | translate }}</button
-          >}
+        <div class="go_up_container">
+          <a href="#landingPage"
+            ><img src="./assets/img/contact/go_up.svg" alt=""
+          /></a>
         </div>
-      </div>
-      <div class="go_up_container">
-        <a href="#landingPage"
-          ><img src="./assets/img/contact/go_up.svg" alt=""
-        /></a>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </section>
 @if (sendWasTouched) {

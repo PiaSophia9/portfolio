@@ -32,8 +32,10 @@ section {
   z-index: 2;
   position: relative;
   gap: 56px;
+  .form_container {
+    width: 50%;
+  }
 }
-
 .left_side {
   display: flex;
   flex-wrap: wrap;
@@ -56,7 +58,7 @@ section {
 .right_side {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  // width: 50%;
   margin-right: 80px;
   gap: 16px;
   span {
@@ -165,8 +167,9 @@ section {
 @media (max-width: 950px) {
   .main_content_container {
     flex-direction: column;
-    align-items: center;
-
+    .form_container {
+      width: 100%;
+    }
     .content_container {
       margin-left: 0;
     }

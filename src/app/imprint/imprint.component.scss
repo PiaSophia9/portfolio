@@ -12,3 +12,9 @@
     rotate: -90deg;
   }
 }
+
+@media (max-width: 500px) {
+  .main_content_container {
+    padding: 120px 10px 80px 10px;
+  }
+}

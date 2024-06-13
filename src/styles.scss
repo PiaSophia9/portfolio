@@ -10,7 +10,7 @@ html {
 
 html,
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -64,6 +64,10 @@ h1 {
   margin-block-start: 0;
   margin-block-end: 0;
 }
+
+// img {
+//   display: none;
+// }
 
 * {
   scroll-behavior: smooth;
