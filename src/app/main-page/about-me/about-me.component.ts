@@ -1,7 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { TranslationService } from '../../service/translation.service';
 import { TranslateModule } from '@ngx-translate/core';
-// import Aos from 'aos';
 
 @Component({
   selector: 'app-about-me',
@@ -12,8 +11,4 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class AboutMeComponent {
   translate = inject(TranslationService);
-
-  // ngOnInit() {
-  //   Aos.init();
-  // }
 }
