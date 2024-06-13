@@ -1,7 +1,4 @@
 <section>
-  <!-- <div class="background_container">
-    <img src="./assets/img/contact/blurr.svg" alt="" />
-  </div> -->
   <div class="main_content_container">
     <div
       class="left_side"
@@ -47,7 +44,6 @@
           required
         />
         @if (!name.valid && name.touched) {
-        <!-- @if (!message.valid && message.touched && !message.disabled) { -->
         <span>{{ "contact.warningName" | translate }}</span>
         }
         <input
@@ -62,7 +58,6 @@
           required
         />
         @if (!email.valid && email.touched) {
-        <!-- @if (!message.valid && message.touched && !message.disabled) { -->
         <span>{{ "contact.warningEmail" | translate }}</span>
         }
         <textarea
@@ -78,7 +73,6 @@
           required
         ></textarea>
         @if (!message.valid && message.touched) {
-        <!-- @if (!message.valid && message.touched && !message.disabled) { -->
         <span>{{ "contact.warningMessage" | translate }}</span>
         }
         <div class="flex_column_container">
@@ -103,7 +97,6 @@
             </div>
             @if (!privacyPolicyChecked && message.valid && email.valid &&
             name.valid) {
-            <!-- @if (!message.valid && message.touched && !message.disabled) { -->
             <span>{{ "contact.warningTherms" | translate }}</span>
             }
           </div>

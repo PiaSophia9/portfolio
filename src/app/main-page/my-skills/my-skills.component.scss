@@ -61,9 +61,13 @@ section {
   }
   .headline_container {
     display: flex;
+    align-items: center;
     gap: 16px;
-    img {
-      rotate: 180deg;
+    .line {
+      height: 4px;
+      width: 20%;
+      background-color: $purple;
+      border-radius: 4px;
     }
   }
 }

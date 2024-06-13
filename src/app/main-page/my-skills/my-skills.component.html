@@ -11,12 +11,9 @@
     >
       @for (skill of skills; track $index) {
       <div class="img_text_container">
-        <!-- <div class="img_container"> -->
         <img src="{{ skill.src }}" alt="" />
         <span>{{ skill.name }}</span>
       </div>
-
-      <!-- </div> -->
       }
     </div>
     <div
@@ -27,9 +24,8 @@
     >
       <div class="headline_container">
         <h1>{{ "skills.headline" | translate }}</h1>
-        <img src="./assets/img/skills/line.svg" alt="" />
+        <div class="line"></div>
       </div>
-
       <p>
         {{ "skills.paragraph" | translate }}
       </p>
