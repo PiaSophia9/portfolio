@@ -28,5 +28,3 @@ export class LandingPageComponent {
     },
   ];
 }
-
-// href="mailto:mail@sophia-brouwers.de"

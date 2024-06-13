@@ -27,8 +27,6 @@ section {
   .left_side {
     display: flex;
     flex-direction: column;
-    // width: 50%;
-    // max-width: 500px;
     margin-right: 80px;
     .icon_text_container {
       display: flex;
@@ -58,7 +56,6 @@ section {
 }
 
 @media (max-width: 1050px) {
-  // .right_side {
   .profile_img {
     width: 300px !important;
   }

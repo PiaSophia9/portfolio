@@ -8,11 +8,6 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [RouterModule, TranslateModule],
   templateUrl: './imprint.component.html',
-  // styles: [
-  //   `
-  //     flex: 1;
-  //   `,
-  // ],
   styleUrl: './imprint.component.scss',
 })
 export class ImprintComponent {

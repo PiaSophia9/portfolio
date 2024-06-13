@@ -83,7 +83,6 @@ section {
   .main_content_container {
     flex-direction: column-reverse;
     align-items: center;
-    // width: 80%;
     padding: 80px 0 80px 10px;
     gap: 24px;
   }
@@ -107,7 +106,6 @@ section {
 
 @media (max-width: 500px) {
   .main_content_container {
-    // width: 100%;
     padding: 80px 0 80px 0;
   }
   .right_side {

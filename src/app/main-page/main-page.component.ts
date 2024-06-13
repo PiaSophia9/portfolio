@@ -25,8 +25,4 @@ import AOS from 'aos';
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss',
 })
-export class MainPageComponent {
-  // constructor() {
-  //   AOS.init();
-  // }
-}
+export class MainPageComponent {}
