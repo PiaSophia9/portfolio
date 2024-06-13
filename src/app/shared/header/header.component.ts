@@ -44,8 +44,4 @@ export class HeaderComponent {
   closeMenu() {
     this.open = false;
   }
-
-  checkIfScreenIsSmall() {
-    console.log('Screen is small?', this.isScreenSmall);
-  }
 }
