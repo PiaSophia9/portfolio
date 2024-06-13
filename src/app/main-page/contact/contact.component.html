@@ -53,7 +53,7 @@
           type="email"
           [placeholder]="'contact.email' | translate"
           name="email"
-          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
           autocomplete="off"
           required
         />
@@ -89,7 +89,7 @@
               </div>
               <span>
                 {{ "contact.thermsPart1" | translate }}
-                <a [routerLink]="['imprint']" routerLinkActive="active"
+                <a [routerLink]="['data']" routerLinkActive="active"
                   >{{ "contact.thermsLink" | translate }}
                 </a>
                 {{ "contact.thermsPart2" | translate }}

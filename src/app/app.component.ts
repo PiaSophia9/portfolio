@@ -30,7 +30,7 @@ import 'aos/dist/aos.css';
 })
 export class AppComponent {
   title = 'portfolio';
-  constructor() {
+  ngOnInit() {
     AOS.init();
   }
 }

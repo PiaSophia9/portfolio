@@ -24,19 +24,19 @@ export class ProjectComponent {
     isReversed: boolean;
   }[] = [
     {
-      imageSrc: './assets/img/portfolio/laptop.png',
+      imageSrc: './assets/img/portfolio/laptop_join.png',
       title: 'Join',
       technologies: ['JavaScript | HTML | CSS'],
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       beschreibung:
         'Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
-      linkLiveTest: 'https://sophia-brouwers.de/join/summary/summary.html',
+      linkLiveTest: 'https://sophia-brouwers.de/join/',
       linkGithub: 'https://github.com/PiaSophia9/join_2.0',
       isReversed: false,
     },
     {
-      imageSrc: './assets/img/portfolio/lapto_pollo_loco.svg',
+      imageSrc: './assets/img/portfolio/laptop_pollo_loco.png',
       title: 'El Pollo Loco',
       technologies: ['JavaScript | HTML | CSS'],
       description:

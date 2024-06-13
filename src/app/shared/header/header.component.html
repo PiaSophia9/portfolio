@@ -1,36 +1,38 @@
-<nav class="header_container">
-  <div class="logo_container">
-    <span class="logo">Soph</span>
-    <span class="logo_colored">i</span>
-    <span class="logo">a</span>
-  </div>
-  @if (isScreenSmall) {
-  <div class="container" (click)="toggleMenu()">
-    <div [ngClass]="{ blueBg: open }" class="bar1"></div>
-    <div [ngClass]="{ blueBg: open }" class="bar2"></div>
-    <div [ngClass]="{ blueBg: open }" class="bar3"></div>
-  </div>
-  } @else {
-  <div class="link_container">
-    <a href="#aboutMe">{{ "header.about" | translate }}</a>
-    <a href="#skills">{{ "header.skills" | translate }}</a>
-    <a href="#portfolio">{{ "header.portfolio" | translate }}</a>
-    <div>
-      <a
-        (click)="translate.switchLanguage('de')"
-        [ngClass]="{ blue: translate.isGerman }"
-        >DE</a
-      >
-      |
-      <a
-        (click)="translate.switchLanguage('en')"
-        [ngClass]="{ blue: !translate.isGerman }"
-        >EN</a
-      >
+<section>
+  <nav class="header_container">
+    <div class="logo_container">
+      <span class="logo">Soph</span>
+      <span class="logo_colored">i</span>
+      <span class="logo">a</span>
     </div>
-  </div>
-  }
-</nav>
+    @if (isScreenSmall) {
+    <div class="container" (click)="toggleMenu()">
+      <div [ngClass]="{ blueBg: open }" class="bar1"></div>
+      <div [ngClass]="{ blueBg: open }" class="bar2"></div>
+      <div [ngClass]="{ blueBg: open }" class="bar3"></div>
+    </div>
+    } @else {
+    <div class="link_container">
+      <a href="#aboutMe">{{ "header.about" | translate }}</a>
+      <a href="#skills">{{ "header.skills" | translate }}</a>
+      <a href="#portfolio">{{ "header.portfolio" | translate }}</a>
+      <div>
+        <a
+          (click)="translate.switchLanguage('de')"
+          [ngClass]="{ blue: translate.isGerman }"
+          >DE</a
+        >
+        |
+        <a
+          (click)="translate.switchLanguage('en')"
+          [ngClass]="{ blue: !translate.isGerman }"
+          >EN</a
+        >
+      </div>
+    </div>
+    }
+  </nav>
+</section>
 @if (open) {
 <div class="popup_background">
   <div
@@ -42,7 +44,7 @@
     data-aos-mirror="true"
     data-aos-once="false"
   >
-    <div class="link_container">
+    <div class="link_container link_container_mobile">
       <a href="#aboutMe" (click)="closeMenu()">{{
         "header.about" | translate
       }}</a>
@@ -52,8 +54,8 @@
       <a href="#portfolio" (click)="closeMenu()">{{
         "header.portfolio" | translate
       }}</a>
-      <a href="#portfolio" (click)="closeMenu()">{{
-        "header.portfolio" | translate
+      <a href="#contact" (click)="closeMenu()">{{
+        "header.contact" | translate
       }}</a>
       <div>
         <a

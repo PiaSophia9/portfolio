@@ -3,7 +3,7 @@ $light_blue: #00bee8;
 $purple: #4b47ff;
 
 html {
-  scroll-padding-top: 40px;
+  scroll-padding-top: 90px;
   display: flex;
   justify-content: center;
 }
@@ -86,6 +86,12 @@ h1 {
 ::-webkit-scrollbar-thumb {
   background: $light_blue;
   border-radius: 8px;
+}
+
+@media (min-width: 1921px) {
+  body {
+    position: static;
+  }
 }
 
 @media (max-width: 1050px) {

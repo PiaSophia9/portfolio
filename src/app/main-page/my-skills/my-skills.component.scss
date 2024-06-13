@@ -118,6 +118,11 @@ section {
   .main_content_container {
     padding: 80px 0 80px 0;
   }
+  .headline_container {
+    div {
+      display: none;
+    }
+  }
   .right_side {
     p {
       margin-left: 10px;
