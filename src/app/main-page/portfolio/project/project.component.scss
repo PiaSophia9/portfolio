@@ -70,12 +70,45 @@
       width: 100%;
       align-items: center;
     }
+    p {
+      text-align: center;
+    }
     .left_side {
       width: 100%;
       img {
         margin-top: -10%;
         margin-bottom: -20%;
       }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .project_container {
+    padding-right: 10px;
+    padding-left: 10px;
+    .right_side {
+      h2 {
+        font-size: 32px !important;
+      }
+    }
+  }
+  .main_content_container {
+    span {
+      margin: 0 10px 0 10px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .button_container {
+    gap: 16px;
+
+    button {
+      font-size: 14px;
+      width: 120px;
+      height: 28px;
     }
   }
 }

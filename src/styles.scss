@@ -23,9 +23,12 @@ body {
   max-width: 1920px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
   min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
 }
 
 button {
@@ -64,10 +67,6 @@ h1 {
   margin-block-end: 0;
 }
 
-// footer {
-//   margin-top: auto;
-// }
-
 * {
   scroll-behavior: smooth;
 }
@@ -103,6 +102,12 @@ h1 {
   input,
   textarea {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 40px;
   }
 }
 

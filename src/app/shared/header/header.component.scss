@@ -4,7 +4,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 4;
   max-width: 1920px;
 }
 
@@ -52,6 +52,72 @@ nav {
   color: $light_blue !important;
 }
 
+// burger menu
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  border-radius: 4px;
+  margin: 6px 0;
+  transition: 0.4s;
+  margin-right: 80px;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.popup_background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(20, 29, 47, 0.98);
+  overflow: hidden;
+  transition: 0.5s;
+  font-size: 24px;
+  .popup {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    .link_container {
+      flex-direction: column;
+      font-size: 40px;
+      a {
+        font-size: 40px;
+      }
+      span {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+.blueBg {
+  background-color: $light_blue;
+}
+
 @media (max-width: 950px) {
   .link_container {
     div {
@@ -64,5 +130,19 @@ nav {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
+  .header_container {
+    .logo_container {
+      margin-left: 10px;
+    }
+
+    .link_container {
+      margin-right: 10px;
+    }
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    margin-right: 10px;
+  }
 }

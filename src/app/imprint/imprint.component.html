@@ -1,19 +1,17 @@
-<section>
-  <div class="main_content_container">
-    <a [routerLink]="['']" routerLinkActive="active"
-      ><img src="./assets/img/imprint/go_back.svg" alt=""
-    /></a>
-    <h2>{{ "imprint.headline" | translate }}</h2>
-    <h3>{{ "imprint.legal" | translate }}</h3>
-    <p>
-      Sophia Brouwers <br />
-      Süsterfeldstr. 24 <br />
-      52072 Aachen
-    </p>
-    <h3>{{ "imprint.contactDetails" | translate }}</h3>
-    <p>
-      {{ "imprint.email" | translate }}: mail&#64;sophia-brouwers.de <br />
-      {{ "imprint.phone" | translate }}: 0160 93891503
-    </p>
-  </div>
-</section>
+<div class="main_content_container">
+  <a [routerLink]="['']" routerLinkActive="active"
+    ><img src="./assets/img/imprint/go_back.svg" alt=""
+  /></a>
+  <h1>{{ "imprint.headline" | translate }}</h1>
+  <h3>{{ "imprint.legal" | translate }}</h3>
+  <p>
+    Sophia Brouwers <br />
+    Süsterfeldstr. 24 <br />
+    52072 Aachen
+  </p>
+  <h3>{{ "imprint.contactDetails" | translate }}</h3>
+  <p>
+    {{ "imprint.email" | translate }}: mail&#64;sophia-brouwers.de <br />
+    {{ "imprint.phone" | translate }}: 0160 93891503
+  </p>
+</div>

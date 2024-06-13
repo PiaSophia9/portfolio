@@ -31,7 +31,7 @@ export class ProjectComponent {
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       beschreibung:
         'Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
-      linkLiveTest: '',
+      linkLiveTest: 'https://sophia-brouwers.de/join/summary/summary.html',
       linkGithub: 'https://github.com/PiaSophia9/join_2.0',
       isReversed: false,
     },
@@ -43,30 +43,9 @@ export class ProjectComponent {
         'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the giant Chicken.',
       beschreibung:
         'Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
-      linkLiveTest: '',
+      linkLiveTest: 'https://sophia-brouwers.de/el-pollo-loco/',
       linkGithub: 'https://github.com/PiaSophia9/pollo_loco',
       isReversed: true,
     },
-    // {
-    //   imageSrc: './assets/img/portfolio/laptop.svg',
-    //   title: 'Pokedex',
-    //   technologies: ['JavaScript | HTML | CSS'],
-    //   description:
-    //     'A Slack clone app that facilitates smooth team communication and collaboration through messaging, file sharing, and customizable channels to enhance workplace efficiency.',
-    //   beschreibung:
-    //     'Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
-    //   linkLiveTest: '',
-    //   linkGithub: 'https://github.com/PiaSophia9/pokedex',
-    //   isReversed: false,
-    // },
   ];
-
-  project!: {
-    imageSrc: string;
-    title: string;
-    technologies: string[];
-    description: string;
-    linkLiveTest: string;
-    linkGithub: string;
-  };
 }

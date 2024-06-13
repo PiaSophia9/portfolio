@@ -4,6 +4,13 @@
     <span class="logo_colored">i</span>
     <span class="logo">a</span>
   </div>
+  @if (isScreenSmall) {
+  <div class="container" (click)="toggleMenu()">
+    <div [ngClass]="{ blueBg: open }" class="bar1"></div>
+    <div [ngClass]="{ blueBg: open }" class="bar2"></div>
+    <div [ngClass]="{ blueBg: open }" class="bar3"></div>
+  </div>
+  } @else {
   <div class="link_container">
     <a href="#aboutMe">{{ "header.about" | translate }}</a>
     <a href="#skills">{{ "header.skills" | translate }}</a>
@@ -22,4 +29,46 @@
       >
     </div>
   </div>
+  }
 </nav>
+@if (open) {
+<div class="popup_background">
+  <div
+    class="popup"
+    data-aos="fade-bottom"
+    data-aos-delay="50"
+    data-aos-duration="125"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+  >
+    <div class="link_container">
+      <a href="#aboutMe" (click)="closeMenu()">{{
+        "header.about" | translate
+      }}</a>
+      <a href="#skills" (click)="closeMenu()">{{
+        "header.skills" | translate
+      }}</a>
+      <a href="#portfolio" (click)="closeMenu()">{{
+        "header.portfolio" | translate
+      }}</a>
+      <a href="#portfolio" (click)="closeMenu()">{{
+        "header.portfolio" | translate
+      }}</a>
+      <div>
+        <a
+          (click)="translate.switchLanguage('de')"
+          [ngClass]="{ blue: translate.isGerman }"
+          >DE</a
+        ><span> | </span>
+
+        <a
+          (click)="translate.switchLanguage('en')"
+          [ngClass]="{ blue: !translate.isGerman }"
+          >EN</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+}

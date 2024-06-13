@@ -4,17 +4,12 @@ import { TranslationService } from '../service/translation.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-imprint',
+  selector: 'app-data',
   standalone: true,
   imports: [RouterModule, TranslateModule],
-  templateUrl: './imprint.component.html',
-  // styles: [
-  //   `
-  //     flex: 1;
-  //   `,
-  // ],
-  styleUrl: './imprint.component.scss',
+  templateUrl: './data.component.html',
+  styleUrl: './data.component.scss',
 })
-export class ImprintComponent {
+export class DataComponent {
   translate = inject(TranslationService);
 }

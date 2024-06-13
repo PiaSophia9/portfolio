@@ -1,7 +1,7 @@
 {
   "header": {
     "about": "Über mich",
-    "skills": "Fähigkeiten",
+    "skills": "Skills",
     "portfolio": "Portfolio"
   },
 
@@ -16,7 +16,7 @@
   "landingPage": {
     "iAm": "Ich bin",
     "jobTitle": "FRONTEND-ENTWICKLERIN",
-    "button": "Kontaktieren Sie mich!",
+    "button": "Kontakt",
     "scrollDown": "Weiter"
   },
 
@@ -30,7 +30,7 @@
   "skills": {
     "headline": "Skills",
     "paragraph": "Ich habe Erfahrungen in der Erstellung von Projekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt.",
-    "button": "Kontakt aufnehmen"
+    "button": "Kontakt"
   },
 
   "portfolioParagraph": "Entdecken Sie hier eine Auswahl meiner Arbeiten.",
@@ -55,5 +55,6 @@
     "warningTherms": "Bitte akzeptieren Sie die Bedingungen"
   },
 
-  "footerImprint": "Impressum"
+  "footerImprint": "Impressum",
+  "footerData": "Datenschutz"
 }
