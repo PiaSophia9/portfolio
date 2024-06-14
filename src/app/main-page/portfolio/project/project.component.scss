@@ -62,6 +62,13 @@
   flex-direction: row-reverse;
 }
 
+@media (min-width: 1920px) {
+  .project_container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 900px) {
   .project_container {
     flex-direction: column;

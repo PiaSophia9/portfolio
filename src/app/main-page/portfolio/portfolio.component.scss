@@ -44,13 +44,28 @@ section {
     align-items: center;
     width: 100%;
     gap: 32px;
-    .line {
-      height: 4px;
-      width: 20%;
-      background-color: $purple;
-      border-radius: 4px;
+    .line_container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      .short_line {
+        height: 4px;
+        width: 20%;
+        background-color: $purple;
+        border-radius: 4px;
+      }
+      .long_line {
+        height: 4px;
+        width: 100%;
+        background-color: $purple;
+        border-radius: 4px;
+      }
     }
   }
+}
+
+.project {
+  max-width: 1920px;
 }
 
 @media (max-width: 950px) {

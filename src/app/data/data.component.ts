@@ -12,4 +12,8 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class DataComponent {
   translate = inject(TranslationService);
+
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }
