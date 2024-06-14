@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { TranslationService } from '../../service/translation.service';
+import { TranslationService } from '../../service/translation/translation.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({

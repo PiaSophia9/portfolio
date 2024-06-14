@@ -4,7 +4,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { TranslationService } from '../../service/translation.service';
+import { TranslationService } from '../../service/translation/translation.service';
 
 @Component({
   selector: 'app-contact',

@@ -1,9 +1,12 @@
-@for (project of projects; track $index) {
+@for (project of projectInfo.projects; track $index) {
 <div
   data-aos="fade-up"
   data-aos-delay="400"
   data-aos-easing="ease-in-out"
-  [ngClass]="{ project_container: true, reversed: project.isReversed }"
+  [ngClass]="{
+    project_container: true,
+    reversed: project.isReversed
+  }"
 >
   <div class="left_side">
     <img src="{{ project.imageSrc }}" alt="" />
