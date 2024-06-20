@@ -38,6 +38,18 @@ export class ProjectInfoService {
       linkGithub: 'https://github.com/PiaSophia9/pollo_loco',
       isReversed: true,
     },
+    {
+      imageSrc: './assets/img/portfolio/laptop_pokedex.png',
+      title: 'Pokedex',
+      technologies: 'JavaScript | HTML | CSS',
+      description:
+        'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+      beschreibung:
+        'Basierend auf der PokéAPI ist dies eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.',
+      linkLiveTest: 'https://sophia-brouwers.de/pokedex/',
+      linkGithub: 'https://github.com/PiaSophia9/pokedex',
+      isReversed: false,
+    },
   ];
 
   constructor() {}

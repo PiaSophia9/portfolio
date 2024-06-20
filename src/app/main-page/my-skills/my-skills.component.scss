@@ -20,7 +20,7 @@ section {
   display: flex;
   max-width: 1920px;
   justify-content: space-between;
-  padding: 80px 0 80px 80px;
+  padding: 80px 80px 80px 80px;
   z-index: 2;
   position: relative;
   gap: 56px;
@@ -55,7 +55,7 @@ section {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin-right: 160px;
+  // margin-right: 160px;
   button {
     margin-block-start: 1em;
     transform-origin: left;
