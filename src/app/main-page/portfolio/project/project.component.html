@@ -1,17 +1,20 @@
 @for (project of projectInfo.projects; track $index) {
 <div
-  data-aos="fade-up"
-  data-aos-delay="400"
-  data-aos-easing="ease-in-out"
   [ngClass]="{
     project_container: true,
     reversed: project.isReversed
   }"
 >
-  <div class="left_side">
+  <div
+    class="left_side"
+    [attr.data-aos]="project.isReversed ? 'fade-left' : 'fade-right'"
+  >
     <img src="{{ project.imageSrc }}" alt="" />
   </div>
-  <div class="right_side">
+  <div
+    class="right_side"
+    [attr.data-aos]="project.isReversed ? 'fade-right' : 'fade-left'"
+  >
     <h2>{{ project.title }}</h2>
     <h3>{{ project.technologies }}</h3>
     @if (translate.isGerman) {
