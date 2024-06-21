@@ -72,18 +72,25 @@
   .project_container {
     flex-direction: column;
     gap: 0;
+    &:last-child {
+      padding-bottom: 0;
+    }
+
     .right_side {
       width: 100%;
       align-items: center;
+      margin-bottom: 0;
     }
     p {
       text-align: center;
+      max-width: 500px;
     }
     .left_side {
       width: 100%;
       img {
-        margin-top: -10%;
-        margin-bottom: -20%;
+        // margin-top: -10%;
+        // margin-bottom: -20%;
+        margin-bottom: 24px;
       }
     }
   }
