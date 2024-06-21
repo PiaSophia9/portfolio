@@ -1,5 +1,9 @@
 @import "./../../styles.scss";
 
+:host {
+  max-width: 1440px;
+}
+
 .main_content {
   flex: 1;
 }

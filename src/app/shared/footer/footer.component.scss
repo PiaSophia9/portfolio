@@ -10,6 +10,7 @@ section {
   z-index: 2;
   margin-top: auto;
   left: 0;
+  position: absolute;
 }
 
 .content {
@@ -77,11 +78,11 @@ section {
   }
 }
 
-@media (min-width: 1921px) {
-  section {
-    position: absolute;
-  }
-}
+// @media (min-width: 1921px) {
+//   section {
+//     position: absolute;
+//   }
+// }
 
 @media (max-width: 700px) {
   section {

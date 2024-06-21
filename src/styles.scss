@@ -18,9 +18,11 @@ body {
   color: white;
   background-color: $dark_blue;
   font-family: "Poppins";
-  max-width: 1920px;
+  // max-width: 1440px;
+  // max-width: max-content;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -91,7 +93,7 @@ h1 {
   }
 }
 
-@media (min-width: 1921px) {
+@media (min-width: 1440px) {
   body {
     position: static;
   }
