@@ -164,13 +164,7 @@ section {
   }
 }
 
-// @media (max-width: 1050px) {
-//   h1 anpassen
-// }
-
 @media (max-width: 950px) {
-  // margin top auf 0 bei left h1
-
   .main_content_container {
     flex-direction: column;
     .form_container {
