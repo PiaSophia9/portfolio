@@ -116,21 +116,21 @@
           /></a>
         </div>
       </form>
+      @if (sendWasTouched) {
+      <div class="popup_background">
+        <div
+          class="popup"
+          data-aos="fade-bottom"
+          data-aos-delay="50"
+          data-aos-duration="125"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          <span>Thank you for your message!</span>
+        </div>
+      </div>
+      }
     </div>
   </div>
 </section>
-@if (sendWasTouched) {
-<div class="popup_background">
-  <div
-    class="popup"
-    data-aos="fade-bottom"
-    data-aos-delay="50"
-    data-aos-duration="125"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false"
-  >
-    <span>Thank you for your message!</span>
-  </div>
-</div>
-}
